@@ -83,7 +83,7 @@ Another way to retrieve your Public IP address, other than to check it in AWS We
 
 TOKEN='curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl- seconds: 21600"' && curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/meta-data/public-ipv4
 
-Error Message:
+# Error Message:
 ![image](https://github.com/user-attachments/assets/74957a1e-d037-40fb-bf4b-d320f414baf8)
 
 # Troubleshooting:
