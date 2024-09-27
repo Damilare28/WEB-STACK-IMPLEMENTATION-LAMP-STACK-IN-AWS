@@ -23,16 +23,14 @@ LAMP stack is a popular open-source software stack used for web development. It 
 
 # 1.	Create an AWS account and a virtual server with Ubuntu Server OS. 
 The EC2 instance of t3.micro family with Ubuntu Server 24.04 LTS (HVM) was launched with the available zone eu-north-1b
-
 ![image](https://github.com/user-attachments/assets/afd1054c-0fba-410f-9529-c0432c3d087a)
 
-2.	Selection of Instance Type and Creation of new key pair
+# 2.	Selection of Instance Type and Creation of new key pair
 a.	Select the preferred Instance type of your choice. For this project we’ll be using the free tier eligible.
 b.	Create a new key pair for your choice.
-
 ![image](https://github.com/user-attachments/assets/91bfe714-d55d-4c9a-b8f8-5c4e5a5983fc)
 
-3.	SECURITY GROUP:
+# 3.	SECURITY GROUP:
 Create a security group to set the firewall rules that control the traffic on your instance.
 ![image](https://github.com/user-attachments/assets/024e9e30-4078-471a-91a9-d4728a2c31c6)
 
