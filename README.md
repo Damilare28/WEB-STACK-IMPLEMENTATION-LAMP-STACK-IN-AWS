@@ -37,8 +37,11 @@ Create a security group to set the firewall rules that control the traffic on yo
 # 4.	Connecting to Virtual Instance:
 Connect to the virtual server using the SSH protocol using TCP port 22
 ![image](https://github.com/user-attachments/assets/c377a53e-43c8-4270-b41e-9cf7dff3d565)
+
 ![image](https://github.com/user-attachments/assets/a1e4f5d6-4cc8-470a-bb7e-e75f28938787)
+
 ![image](https://github.com/user-attachments/assets/3ea3a25e-b94c-4d03-81ab-54ce3843db85)
+
 ![image](https://github.com/user-attachments/assets/30d3d3a0-fdb4-4d78-b145-aba4956dba5d)
 
 
