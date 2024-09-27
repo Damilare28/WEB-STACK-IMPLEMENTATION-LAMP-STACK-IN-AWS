@@ -112,8 +112,24 @@ $ sudo mysql
 
 ## 3. Set a password for the root user.
 ALTERUSER'root' @'localhost' IDENTIFIED WITH mysql_native_password BY'PassWord.1';
-## Error
+## Error Message
 ![image](https://github.com/user-attachments/assets/eefc6da1-aa97-41f1-ae22-69a8ac190d6d)
+
+## Troubleshooting:
+The error in the MySQL query is caused by syntax mistakes. Specifically:
+   1. There needs to be a space between ALTER and USER.
+   2. You should ensure proper spacing around 'root' and the password string.
+   3. It should be ALTER USER instead of ALTERUSER.
+## Solution
+ALTER USER is the correct command to modify a user's authentication method or password.
+'root'@'localhost' refers to the root user connecting from localhost.
+IDENTIFIED WITH mysql_native_password sets the authentication method to mysql_native_password.
+BY 'PassWord.1' sets the new password to PassWord.1.
+## Corrected Syntax
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
+## Result
+![image](https://github.com/user-attachments/assets/31967ca9-8558-45bd-9b89-4782130acea3)
+
 
 
 
