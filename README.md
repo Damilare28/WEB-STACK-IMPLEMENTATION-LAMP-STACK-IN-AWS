@@ -73,7 +73,9 @@ Apache HTTP Server is a widely used open-source web server software. It handles 
 
 # Test how our Apache HTTP server can respond to requests from the Internet. 
    Open a web browser of your choice and try to access following url
+   
    http://<Public-IP-Address>:80-- In place of the <Public-IP-Address> Use the public ip address on the instance page
+   
    Note: If the page is displayed, then the web server is now correctly installed and accessible through your firewall.
 ![image](https://github.com/user-attachments/assets/bc7869aa-0241-4231-94d9-fcf678d5866e)
 
