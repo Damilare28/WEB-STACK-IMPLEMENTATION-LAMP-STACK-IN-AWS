@@ -24,4 +24,8 @@ Creating an AWS account and a virtual server with Ubuntu Server OS.
 
 ![image](https://github.com/user-attachments/assets/afd1054c-0fba-410f-9529-c0432c3d087a)
 
+# 1.	Creating an AWS account and a virtual server with Ubuntu Server OS. 
+The EC2 instance of t3.micro family with Ubuntu Server 24.04 LTS (HVM) was launched with the available zone eu-north-1b
+
+
  
