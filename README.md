@@ -47,7 +47,7 @@ a.	Locate where the key is saved on the computer.
 b.	If properly set up, the link under the example should work perfectly.  
 ![image](https://github.com/user-attachments/assets/30d3d3a0-fdb4-4d78-b145-aba4956dba5d)
 
-## Step 1: Installing Apache2 and Updating the firewall.
+# Step 1: Installing Apache2 and Updating the firewall.
 
 ## What is Apache: 
 Apache HTTP Server is a widely used open-source web server software. It handles incoming web requests, serves web pages to users, and supports a variety of modules for added functionality
@@ -96,6 +96,12 @@ TOKEN=$(curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-meta
 curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/meta-data/public-ipv4
 ## Result:
 ![image](https://github.com/user-attachments/assets/4b65c956-c6d6-4ecc-9f10-602cbddcf850)
+
+# Step 2: Installing MYSQL
+##    What is MYSQL
+MySQL is an open-source relational database management system used to store, manage, and retrieve data for web applications. It is used to Store information like user accounts, product details, and content in an organized, easily queryable format.
+
+
 
 
 
