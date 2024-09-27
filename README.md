@@ -62,7 +62,15 @@ Apache HTTP Server is a widely used open-source web server software. It handles 
 
 # 3. Verify that apache is running as a service on the OS.
       sudo systemctl status apapche2
+      Note: If it is green and running, then apache2 is running perfectly.
 ![image](https://github.com/user-attachments/assets/3202a97e-e07d-43c3-9bae-4dbdf80e8b38)
+
+# The server can be accessed locally by using the commands below
+   $ curl http://localhost:80
+            or
+   $ curl http://127.0.0.1:80
+![image](https://github.com/user-attachments/assets/9cd375c7-cb6f-49bd-8567-92ca684dca2f)
+
 
       
 
