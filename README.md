@@ -66,13 +66,18 @@ Apache HTTP Server is a widely used open-source web server software. It handles 
 ![image](https://github.com/user-attachments/assets/3202a97e-e07d-43c3-9bae-4dbdf80e8b38)
 
 # The server can be accessed locally by using the commands below
-   $ curl http://localhost:80
-   
-            or
-            
+   $ curl http://localhost:80   
+            or            
    $ curl http://127.0.0.1:80
 ![image](https://github.com/user-attachments/assets/9cd375c7-cb6f-49bd-8567-92ca684dca2f)
 
+# Test how our Apache HTTP server can respond to requests from the Internet. 
+   Open a web browser of your choice and try to access following url
+      http://<Public-IP-Address>:80-- In place of the <Public-IP-Address> Use the public ip address on the instance page
+   Note: If the page is displayed, then the web server is now correctly installed and accessible through your firewall.
+![image](https://github.com/user-attachments/assets/bc7869aa-0241-4231-94d9-fcf678d5866e)
+
+      
 
       
 
