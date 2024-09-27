@@ -18,3 +18,7 @@ LAMP stack is a popular open-source software stack used for web development. It 
 •	Stage 3: Install PHP.
 
 •	Stage 4: Create a Virtual Host for your Website using Apache.
+
+# Stage 0: Preparing Prerequisite. 
+Creating an AWS account and a virtual server with Ubuntu Server OS.
+ 
