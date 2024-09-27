@@ -57,8 +57,14 @@ Apache HTTP Server is a widely used open-source web server software. It handles 
 ![image](https://github.com/user-attachments/assets/e9dd4156-6b88-48c0-8fa6-303e58c83bb7)
 
 # 2. Run Apache2 command installation package
-      Sudo apt install apache2
+      sudo apt install apache2
   ![image](https://github.com/user-attachments/assets/1686673e-c66d-45cf-af73-8a01f0263a34)
+
+# 3. Verify that apache is running as a service on the OS.
+      sudo systemctl status apapche2
+![image](https://github.com/user-attachments/assets/3202a97e-e07d-43c3-9bae-4dbdf80e8b38)
+
+      
 
 
 
