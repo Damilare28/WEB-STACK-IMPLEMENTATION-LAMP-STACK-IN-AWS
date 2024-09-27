@@ -108,6 +108,14 @@ When prompted, confirm installation by typing Y, and then ENTER.
 
 ## 2. Log in to the MySQL console by typing:
 $ sudo mysql
+![image](https://github.com/user-attachments/assets/5270204a-aad8-41e1-96d5-eb6fac0e1f4a)
+
+## 3. Set a password for the root user.
+ALTERUSER'root' @'localhost' IDENTIFIED WITH mysql_native_password BY'PassWord.1';
+## Error
+![image](https://github.com/user-attachments/assets/eefc6da1-aa97-41f1-ae22-69a8ac190d6d)
+
+
 
 
 
