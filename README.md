@@ -79,6 +79,9 @@ Apache HTTP Server is a widely used open-source web server software. It handles 
    Note: If the page is displayed, then the web server is now correctly installed and accessible through your firewall.
 ![image](https://github.com/user-attachments/assets/bc7869aa-0241-4231-94d9-fcf678d5866e)
 
+Another way to retrieve your Public IP address, other than to check it in AWS Web console, is to use following command:
+TOKEN='curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl- seconds: 21600"' && curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/meta-data/public-ipv4
+
       
 
       
