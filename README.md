@@ -1,6 +1,6 @@
-# # WEB-STACK-IMPLEMENTATION-LAMP-STACK-IN-AWS
+# WEB-STACK-IMPLEMENTATION-LAMP-STACK-IN-AWS
 
-## Purpose of this Project: 
+# Purpose of this Project: 
 This project helps to develop deep understanding on the following
 •	Linux Terminal
 •	Understanding on web technology stack such as LAMP
