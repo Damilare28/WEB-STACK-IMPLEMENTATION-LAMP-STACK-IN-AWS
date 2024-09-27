@@ -67,7 +67,9 @@ Apache HTTP Server is a widely used open-source web server software. It handles 
 
 # The server can be accessed locally by using the commands below
    $ curl http://localhost:80
+   
             or
+            
    $ curl http://127.0.0.1:80
 ![image](https://github.com/user-attachments/assets/9cd375c7-cb6f-49bd-8567-92ca684dca2f)
 
