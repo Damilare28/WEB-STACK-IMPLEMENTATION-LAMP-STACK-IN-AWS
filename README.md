@@ -47,16 +47,16 @@ a.	Locate where the key is saved on the computer.
 b.	If properly set up, the link under the example should work perfectly.  
 ![image](https://github.com/user-attachments/assets/30d3d3a0-fdb4-4d78-b145-aba4956dba5d)
 
-Step 1: Installing Apache2 and Updating the firewall.
+# Step 1: Installing Apache2 and Updating the firewall.
 
 # What is Apache: 
 Apache HTTP Server is a widely used open-source web server software. It handles incoming web requests, serves web pages to users, and supports a variety of modules for added functionality
-1.	# Update and upgrade all packages in the package manager.
+# 1.	Update and upgrade all packages in the package manager.
    sudo apt update
    sudo apt upgrade
 ![image](https://github.com/user-attachments/assets/e9dd4156-6b88-48c0-8fa6-303e58c83bb7)
 
-2. # Run Apache2 command installation package
+# 2. Run Apache2 command installation package
    Sudo apt install apache2
 ![image](https://github.com/user-attachments/assets/1686673e-c66d-45cf-af73-8a01f0263a34)
 
