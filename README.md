@@ -100,7 +100,8 @@ curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/meta
 # Step 2: Installing MYSQL
 ##    What is MYSQL
 MySQL is an open-source relational database management system used to store, manage, and retrieve data for web applications. It is used to Store information like user accounts, product details, and content in an organized, easily queryable format.
-
+## 1. Install the mysql-server
+$ sudo apt install mysql-server
 
 
 
