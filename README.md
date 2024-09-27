@@ -32,6 +32,11 @@ b.	Create a new key pair for your choice.
 
 ![image](https://github.com/user-attachments/assets/91bfe714-d55d-4c9a-b8f8-5c4e5a5983fc)
 
+3.	SECURITY GROUP:
+Create a security group to set the firewall rules that control the traffic on your instance.
+![image](https://github.com/user-attachments/assets/024e9e30-4078-471a-91a9-d4728a2c31c6)
+
+
 
 
 
