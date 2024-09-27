@@ -58,7 +58,7 @@ Apache HTTP Server is a widely used open-source web server software. It handles 
 
 # 2. Run Apache2 command installation package
    Sudo apt install apache2
-![image](https://github.com/user-attachments/assets/1686673e-c66d-45cf-af73-8a01f0263a34)
+   ![image](https://github.com/user-attachments/assets/1686673e-c66d-45cf-af73-8a01f0263a34)
 
 
 
