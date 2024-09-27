@@ -21,4 +21,6 @@ LAMP stack is a popular open-source software stack used for web development. It 
 
 # Stage 0: Preparing Prerequisite. 
 Creating an AWS account and a virtual server with Ubuntu Server OS.
+![image](https://github.com/user-attachments/assets/afd1054c-0fba-410f-9529-c0432c3d087a)
+
  
