@@ -80,9 +80,16 @@ Apache HTTP Server is a widely used open-source web server software. It handles 
 ![image](https://github.com/user-attachments/assets/bc7869aa-0241-4231-94d9-fcf678d5866e)
 
 Another way to retrieve your Public IP address, other than to check it in AWS Web console, is to use following command:
+
 TOKEN='curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl- seconds: 21600"' && curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/meta-data/public-ipv4
 
-      
+Error Message:
+![image](https://github.com/user-attachments/assets/74957a1e-d037-40fb-bf4b-d320f414baf8)
+
+# Troubleshooting:
+The issue lies in how the TOKEN is being assigned. It is not correctly capturing the result of the curl command in the TOKEN variable. It is being set to a string ('curl -X PUT ...') instead of executing the command and capturing its output.
+
+
 
       
 
