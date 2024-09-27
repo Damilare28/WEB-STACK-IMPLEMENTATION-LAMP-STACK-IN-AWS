@@ -89,6 +89,16 @@ Error Message:
 # Troubleshooting:
 The issue lies in how the TOKEN is being assigned. It is not correctly capturing the result of the curl command in the TOKEN variable. It is being set to a string ('curl -X PUT ...') instead of executing the command and capturing its output.
 
+# Solution: 
+There is need to properly execute the curl command and assign its output to the TOKEN variable.
+# Corrected syntax:
+TOKEN=$(curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600")
+curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/meta-data/public-ipv4
+# Result:
+![image](https://github.com/user-attachments/assets/4b65c956-c6d6-4ecc-9f10-602cbddcf850)
+
+
+
 
 
       
