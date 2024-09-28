@@ -179,10 +179,8 @@ exit
 # Stage 3 Installing PHP, php-mysql, libapache2-mod-php
 ## What is PHP
 PHP is used to develop the dynamic content of the website. These languages process user inputs, interact with the database, and generate dynamic HTML for the web server to serve to users.
-
 ## What is php-mysql
 It is a PHP module that allows PHP to communicate with MySQL-based databases.
-
 ## What is libapache2-mod-php
 It is used to enable Apache to handle PHP files.
 
