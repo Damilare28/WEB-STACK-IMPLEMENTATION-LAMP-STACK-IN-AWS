@@ -184,9 +184,19 @@ It is a PHP module that allows PHP to communicate with MySQL-based databases.
 ## What is libapache2-mod-php
 It is used to enable Apache to handle PHP files.
 
-## These three packages can be installed at once by using
+## installation of the three packages at once by using
 sudo apt install php libapache2-mod-mysql php-mysql
+![image](https://github.com/user-attachments/assets/0a4205c8-e0b4-46d6-b32a-5dc247977f2d)
 
+## Confirmation of my php version
+sudo PHP -v
+![image](https://github.com/user-attachments/assets/9e08425a-6a3a-4141-9aff-a67421a611c7)
+
+My LAMP Stack is completely installed and fully operational with the following components:
+1. Linux (UBUNTU)
+2. Apache HTTP Server
+3. MySQL
+4. PHP
 
 
 
