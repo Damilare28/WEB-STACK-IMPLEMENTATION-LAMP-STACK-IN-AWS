@@ -184,6 +184,9 @@ It is a PHP module that allows PHP to communicate with MySQL-based databases.
 ## What is libapache2-mod-php
 It is used to enable Apache to handle PHP files.
 
+## These three packages can be installed at once by using
+sudo apt install php libapache2-mod-mysql php-mysql
+
 
 
 
