@@ -176,7 +176,9 @@ Enter the new password when promped to
 Exit the MYSQL console
 
 exit
+
 # Stage 3 Installing PHP, php-mysql, libapache2-mod-php
+
 ## What is PHP
 PHP is used to develop the dynamic content of the website. These languages process user inputs, interact with the database, and generate dynamic HTML for the web server to serve to users.
 ## What is php-mysql
@@ -200,6 +202,23 @@ My LAMP Stack is completely installed and fully operational with the following c
    4. PHP
 
 To test it with a PHP script, an APACHE VIRTUAL HOST will be set up to hold the websites files and folders.
+
+# STtage 4: APACHE VIRTUAL HOST
+   ## 1. Creating a directory for PROJECTLAMP using "mkdir" command
+sudo mkdir /var/www/projectlamp 
+   ## 2. Assign ownership of the directory to my current system user using the $USER environment variable
+sudo chown -R $USER:$USER /var/www/projectlamp
+![image](https://github.com/user-attachments/assets/bf68b08e-26f9-4acc-a5bc-d0179242f1ea)
+
+   ## Using Vi or Vim to create and open a configuration file in Apache's sites available directory
+sudo vi /etc/apache2/sites-available/projectlamp.conf 
+![image](https://github.com/user-attachments/assets/143f11bc-b8d6-4b38-9bf2-3423e1abd7da)
+
+![image](https://github.com/user-attachments/assets/cc710852-13dd-46df-aa3e-b1611831b50e)
+
+
+   1. Change the Directory index for index.html file to the Directory index for index.php file to bring back the regular application page.
+sudo vim/ etc/apache2/mod-enabled/dir.conf
 
 
 
