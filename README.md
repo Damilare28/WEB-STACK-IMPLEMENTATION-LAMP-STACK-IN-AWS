@@ -129,6 +129,38 @@ BY 'PassWord.1' sets the new password to PassWord.1.
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
 ## Result
 ![image](https://github.com/user-attachments/assets/31967ca9-8558-45bd-9b89-4782130acea3)
+## Exit mysql
+exit
+## Run the Interactive script command
+      sudo mysql_secure_installation
+The command "$ sudo mysql_secure_installation" is used to improve the security of your MySQL installation by performing a few essential security-related tasks.
+a. Protect your MySQL server from unauthorized access.
+b. Prevent remote root access (if not needed).
+c. Ensure your installation is more resilient to attacks.
+![image](https://github.com/user-attachments/assets/0b22530d-cdf0-4252-8f6b-fe0f33e772e2)
+Press y to set-up VALIDATE PASSWORD component
+![image](https://github.com/user-attachments/assets/d72ad011-403a-41bb-9769-0a8e3c39173b)
+Enter 0,1 or 2 to choose which level of password validation policy you wish
+![image](https://github.com/user-attachments/assets/4db9b999-8bce-46fd-aa20-1e50318ae7fc)
+Enter y to continue
+![image](https://github.com/user-attachments/assets/81406f49-12b3-4015-b912-12b50791a98a)
+Enter the desired password
+![image](https://github.com/user-attachments/assets/1b9dbf19-e788-4a5a-847c-b85e98d8cb51)
+Press y to continue.
+For the rest of the question press y and hit enter at each prompt.
+![image](https://github.com/user-attachments/assets/4f348ce1-cd6b-4351-98d3-e6cc6dee1386)
+## Log in to the MYSQL CONSOLE after changing the user root pasword by using
+sudo mysql -p
+Enter the new password when promped to
+![image](https://github.com/user-attachments/assets/e4ccdb80-e9f6-48b0-8446-70e2cbcc4cef)
+Exit the MYSQL console
+exit
+
+
+
+
+
+
 
 
 
