@@ -190,13 +190,16 @@ sudo apt install php libapache2-mod-mysql php-mysql
 
 ## Confirmation of my php version
 sudo PHP -v
+
 ![image](https://github.com/user-attachments/assets/9e08425a-6a3a-4141-9aff-a67421a611c7)
 
 My LAMP Stack is completely installed and fully operational with the following components:
-1. Linux (UBUNTU)
-2. Apache HTTP Server
-3. MySQL
-4. PHP
+   1. Linux (UBUNTU)
+   2. Apache HTTP Server
+   3. MySQL
+   4. PHP
+
+To test it with a PHP script, an APACHE VIRTUAL HOST will be set up to hold the websites files and folders.
 
 
 
