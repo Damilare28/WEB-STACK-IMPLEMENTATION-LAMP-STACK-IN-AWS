@@ -218,22 +218,53 @@ sudo vi /etc/apache2/sites-available/projectlamp.conf
    ## 4. Using the Ls command to show the new file in the sites-available directory
  sudo ls /etc/apache2/sites-available
    ## Output:
-    ![image](https://github.com/user-attachments/assets/b2092fbb-1bc0-49a6-8ecd-b6e99ce386b5)
+![image](https://github.com/user-attachments/assets/b2092fbb-1bc0-49a6-8ecd-b6e99ce386b5)
    ## 5. Enable the new virtual host
-   sudo a2ensite projectlamp
-   ![image](https://github.com/user-attachments/assets/d06ef194-9081-45b1-b1aa-c7a02620de4a)
+sudo a2ensite projectlamp
+![image](https://github.com/user-attachments/assets/d06ef194-9081-45b1-b1aa-c7a02620de4a)
    ## 6. Disable Apache's default website
-   sudo a2dissite 000-default
-   ![image](https://github.com/user-attachments/assets/b3fb248d-ee95-4486-bc86-1929fff15a54)
-   ## 7. Reload Apache to effect the changes
-   sudo systemctl reload apache2
+sudo a2dissite 000-default
+![image](https://github.com/user-attachments/assets/b3fb248d-ee95-4486-bc86-1929fff15a54)
+   ## 7. Use the commamnd below to determine the file is syntax error free
+sudo apache2ctl configtest
+![image](https://github.com/user-attachments/assets/67712924-0c11-4ebf-8fee-ceac234fa836)
+
+   ## 8. Reload Apache to effect the changes
+sudo systemctl reload apache2
+![image](https://github.com/user-attachments/assets/07dd50d3-12f1-4741-a587-e08cf550c5eb)
+
+The website is now active. However, the web root /var/www/projectlamp is still empty.
+   ## 9. Create an index.html file to ensure the virtual host works perfectly.
+sudo echo 'Hello LAMP from hostname' $ (TOKEN='curl -X PUT
+"http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"' &&
+curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/meta-data/public-
+hostname) 'with public IP' $ (TOKEN='curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-
+aws-ec2-metadata-token-ttl-seconds: 21600"' && curl -H "X-aws-ec2-metadata-token: $TOKEN" -s
+http://169.254.169.254/latest/meta-data/public-ipv4) >/var/www/projectlamp/index.html
+   ## Error
+![image](https://github.com/user-attachments/assets/6c799c44-3f3d-400f-af2c-bac76e71dc93)
+   ## Troubleshooting
+1. sudo bash -c: Runs the entire command in a subshell with bash, allowing sudo to handle the command substitution properly.
+2. Command Substitution: Wrapped the $(TOKEN=...) inside double quotes to ensure correct parsing.
+   ## Corrected command
+sudo bash -c 'echo "Hello LAMP from hostname $(TOKEN=$(curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600") && curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/meta-data/public-hostname) with public IP $(TOKEN=$(curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600") && curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/meta-data/public-ipv4)" >/var/www/projectlamp/index.html'
+   ## Output
+![image](https://github.com/user-attachments/assets/3c6af329-3027-48b3-8e47-403c7f6b3e83)
+   ## 10. Open a website using the public ip address
+   ## Output
+![image](https://github.com/user-attachments/assets/dbadbf93-82a1-497b-9908-8d08ee1db47c)
 
 
 
 
 
-   1. Change the Directory index for index.html file to the Directory index for index.php file to bring back the regular application page.
-sudo vim/ etc/apache2/mod-enabled/dir.conf
+   
+
+
+
+
+
+ 
 
 
 
