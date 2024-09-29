@@ -210,11 +210,26 @@ sudo mkdir /var/www/projectlamp
 sudo chown -R $USER:$USER /var/www/projectlamp
 ![image](https://github.com/user-attachments/assets/bf68b08e-26f9-4acc-a5bc-d0179242f1ea)
 
-   ## Using Vi or Vim to create and open a configuration file in Apache's sites available directory
+   ## 3.Using Vi or Vim to create and open a configuration file in Apache's sites available directory
 sudo vi /etc/apache2/sites-available/projectlamp.conf 
 ![image](https://github.com/user-attachments/assets/143f11bc-b8d6-4b38-9bf2-3423e1abd7da)
 
 ![image](https://github.com/user-attachments/assets/cc710852-13dd-46df-aa3e-b1611831b50e)
+   ## 4. Using the Ls command to show the new file in the sites-available directory
+ sudo ls /etc/apache2/sites-available
+   ## Output:
+    ![image](https://github.com/user-attachments/assets/b2092fbb-1bc0-49a6-8ecd-b6e99ce386b5)
+   ## 5. Enable the new virtual host
+   sudo a2ensite projectlamp
+   ![image](https://github.com/user-attachments/assets/d06ef194-9081-45b1-b1aa-c7a02620de4a)
+   ## 6. Disable Apache's default website
+   sudo a2dissite 000-default
+   ![image](https://github.com/user-attachments/assets/b3fb248d-ee95-4486-bc86-1929fff15a54)
+   ## 7. Reload Apache to effect the changes
+   sudo systemctl reload apache2
+
+
+
 
 
    1. Change the Directory index for index.html file to the Directory index for index.php file to bring back the regular application page.
