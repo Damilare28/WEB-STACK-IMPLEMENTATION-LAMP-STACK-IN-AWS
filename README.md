@@ -390,7 +390,8 @@ Note: This page provides information about your server from the perspective of P
 Note: it's best to remove the file you created as it contains sensitive information about your PHP environment -and your Ubuntu server.
 
       $ sudo rm /var/www/projectlamp/index.php
-
+## Conclusion
+      At the end of this project, it was possible to set up a web server environment for hosting dynamic websites and web applications by using Lamp Stack.
 
 
 
