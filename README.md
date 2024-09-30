@@ -284,28 +284,41 @@ sudo bash -c 'echo "Hello LAMP from hostname $(TOKEN=$(curl -X PUT "http://169.2
 ![image](https://github.com/user-attachments/assets/dbadbf93-82a1-497b-9908-8d08ee1db47c)
 
 # Stage 5: Enabling PHP on the website
+
    ## 1. Changing the landing page from index.html to index.php in the Directory file
+   
 sudo vim /etc/apache2/mods-enabled/dir.conf
+
 <IfModule mod_dir.c>
 #Change this:
 #DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm
 #To this:
 DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
 </IfModule>
+
 ![image](https://github.com/user-attachments/assets/1cb3cfa0-ac63-4955-929f-3ed2404bcac7)
+
    ## 2. Reload Apache to effect the changes
+   
 ![image](https://github.com/user-attachments/assets/91ee7744-7440-4e0a-9021-9629d9d02300)
-Finally, we will create a PHP script to test that PHP is correctly installed and configured on your
-server.
-Now that you have a custom location to host your website's files and folders, we'll create a PHP
-test script to confirm that Apache is able to handle and process requests for PHP files.
+
+Finally, we will create a PHP script to test that PHP is correctly installed and configured on your server.
+
+Now that there is a custom location to host your website's files and folders, we'll create a PHP test script to confirm that Apache is able to handle and process requests for PHP files.
 
    ## 3. Create a new file named index. php inside the custom web root folder:
+   
 sudo vim /var/www/projectlamp/index.php
+
 Add the PHP code inside the blank file opened
-<? php
-phpinfo () ;
+
+<?php
+phpinfo();
+
 ![image](https://github.com/user-attachments/assets/25d51f4d-4102-4fce-a5b3-65a3a186a5d8)
+
+![image](https://github.com/user-attachments/assets/4aa354ee-c1a7-4bf6-9878-0bc54708faf2)
+
 
 
 
