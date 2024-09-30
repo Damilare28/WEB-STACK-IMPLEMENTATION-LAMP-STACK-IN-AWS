@@ -63,33 +63,33 @@ Apache HTTP Server is a widely used open-source web server software. It handles 
 
 ## 1.	Update and upgrade all packages in the package manager.
 
-sudo apt update   
+   sudo apt update   
    
-sudo apt upgrade
+   sudo apt upgrade
    
 ![image](https://github.com/user-attachments/assets/e9dd4156-6b88-48c0-8fa6-303e58c83bb7)
 
 ## 2. Run Apache2 command installation package
 
-sudo apt install apache2
+   sudo apt install apache2
       
   ![image](https://github.com/user-attachments/assets/1686673e-c66d-45cf-af73-8a01f0263a34)
 
 ## 3. Verify that apache is running as a service on the OS.
 
-sudo systemctl status apapche2
+      sudo systemctl status apapche2
       
-      Note: If it is green and running, then apache2 is running perfectly
+Note: If it is green and running, then apache2 is running perfectly
       .
 ![image](https://github.com/user-attachments/assets/3202a97e-e07d-43c3-9bae-4dbdf80e8b38)
 
 ## The server can be accessed locally by using the commands below
 
-curl http://localhost:80   
+      curl http://localhost:80   
    
-            or            
+or            
             
-curl http://127.0.0.1:80
+      curl http://127.0.0.1:80
    
 ![image](https://github.com/user-attachments/assets/9cd375c7-cb6f-49bd-8567-92ca684dca2f)
 
@@ -136,7 +136,7 @@ MySQL is an open-source relational database management system used to store, man
 
 ## 1. Install the mysql-server
 
-$ sudo apt install mysql-server
+   $ sudo apt install mysql-server
 
 When prompted, confirm installation by typing Y, and then ENTER.
 
@@ -145,13 +145,13 @@ When prompted, confirm installation by typing Y, and then ENTER.
 
 ## 2. Log in to the MySQL console by typing:
 
-$ sudo mysql
+   $ sudo mysql
 
 ![image](https://github.com/user-attachments/assets/5270204a-aad8-41e1-96d5-eb6fac0e1f4a)
 
 ## 3. Set a password for the root user.
 
-ALTERUSER'root' @'localhost' IDENTIFIED WITH mysql_native_password BY'PassWord.1';
+   ALTERUSER'root' @'localhost' IDENTIFIED WITH mysql_native_password BY'PassWord.1';
 
 ## Error Message
 
@@ -173,7 +173,7 @@ BY 'PassWord.1' sets the new password to PassWord.1.
 
 ## Corrected Syntax
 
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
+   ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
 
 ## Result
 
@@ -181,7 +181,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord
 
 ## Exit mysql
 
-exit
+   exit
 
 ## Run the Interactive script command
 
