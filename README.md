@@ -63,15 +63,15 @@ Apache HTTP Server is a widely used open-source web server software. It handles 
 
 ## 1.	Update and upgrade all packages in the package manager.
 
-   sudo apt update   
+      sudo apt update   
    
-   sudo apt upgrade
+      sudo apt upgrade
    
 ![image](https://github.com/user-attachments/assets/e9dd4156-6b88-48c0-8fa6-303e58c83bb7)
 
 ## 2. Run Apache2 command installation package
 
-   sudo apt install apache2
+      sudo apt install apache2
       
   ![image](https://github.com/user-attachments/assets/1686673e-c66d-45cf-af73-8a01f0263a34)
 
@@ -121,8 +121,8 @@ There is need to properly execute the curl command and assign its output to the 
 
 ## Corrected syntax:
 
-TOKEN=$(curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600")
-curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/meta-data/public-ipv4
+      TOKEN=$(curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600")
+      curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/meta-data/public-ipv4
 
 ## Result:
 
@@ -136,7 +136,7 @@ MySQL is an open-source relational database management system used to store, man
 
 ## 1. Install the mysql-server
 
-   $ sudo apt install mysql-server
+      $ sudo apt install mysql-server
 
 When prompted, confirm installation by typing Y, and then ENTER.
 
@@ -145,13 +145,13 @@ When prompted, confirm installation by typing Y, and then ENTER.
 
 ## 2. Log in to the MySQL console by typing:
 
-   $ sudo mysql
+      $ sudo mysql
 
 ![image](https://github.com/user-attachments/assets/5270204a-aad8-41e1-96d5-eb6fac0e1f4a)
 
 ## 3. Set a password for the root user.
 
-   ALTERUSER'root' @'localhost' IDENTIFIED WITH mysql_native_password BY'PassWord.1';
+      ALTERUSER'root' @'localhost' IDENTIFIED WITH mysql_native_password BY'PassWord.1';
 
 ## Error Message
 
@@ -173,7 +173,7 @@ BY 'PassWord.1' sets the new password to PassWord.1.
 
 ## Corrected Syntax
 
-   ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
+      ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
 
 ## Result
 
@@ -181,7 +181,7 @@ BY 'PassWord.1' sets the new password to PassWord.1.
 
 ## Exit mysql
 
-   exit
+      exit
 
 ## Run the Interactive script command
 
@@ -221,7 +221,7 @@ For the rest of the question press y and hit enter at each prompt.
 
 ## Log in to the MYSQL CONSOLE after changing the user root pasword by using
 
-sudo mysql -p
+      sudo mysql -p
 
 Enter the new password when promped to
 
@@ -229,7 +229,7 @@ Enter the new password when promped to
 
 Exit the MYSQL console
 
-exit
+      exit
 
 # Stage 3 Installing PHP, php-mysql, libapache2-mod-php
 
@@ -247,13 +247,13 @@ It is used to enable Apache to handle PHP files.
 
 ## installation of the three packages at once by using
 
-sudo apt install php libapache2-mod-mysql php-mysql
+      sudo apt install php libapache2-mod-mysql php-mysql
 
 ![image](https://github.com/user-attachments/assets/0a4205c8-e0b4-46d6-b32a-5dc247977f2d)
 
 ## Confirmation of my php version
 
-sudo PHP -v
+      sudo PHP -v
 
 ![image](https://github.com/user-attachments/assets/9e08425a-6a3a-4141-9aff-a67421a611c7)
 
@@ -269,17 +269,17 @@ To test it with a PHP script, an APACHE VIRTUAL HOST will be set up to hold the 
 
    ## 1. Creating a directory for PROJECTLAMP using "mkdir" command
    
-sudo mkdir /var/www/projectlamp 
+      sudo mkdir /var/www/projectlamp 
 
    ## 2. Assign ownership of the directory to my current system user using the $USER environment variable
    
-sudo chown -R $USER:$USER /var/www/projectlamp
+      sudo chown -R $USER:$USER /var/www/projectlamp
 
 ![image](https://github.com/user-attachments/assets/bf68b08e-26f9-4acc-a5bc-d0179242f1ea)
 
    ## 3.Using Vi or Vim to create and open a configuration file in Apache's sites available directory
    
-sudo vi /etc/apache2/sites-available/projectlamp.conf 
+      sudo vi /etc/apache2/sites-available/projectlamp.conf 
 
 ![image](https://github.com/user-attachments/assets/143f11bc-b8d6-4b38-9bf2-3423e1abd7da)
 
@@ -287,7 +287,7 @@ sudo vi /etc/apache2/sites-available/projectlamp.conf
 
    ## 4. Using the Ls command to show the new file in the sites-available directory
    
- sudo ls /etc/apache2/sites-available
+       sudo ls /etc/apache2/sites-available
  
    ## Output:
    
@@ -295,25 +295,25 @@ sudo vi /etc/apache2/sites-available/projectlamp.conf
 
    ## 5. Enable the new virtual host
    
-sudo a2ensite projectlamp
+      sudo a2ensite projectlamp
 
 ![image](https://github.com/user-attachments/assets/d06ef194-9081-45b1-b1aa-c7a02620de4a)
 
    ## 6. Disable Apache's default website
    
-sudo a2dissite 000-default
+      sudo a2dissite 000-default
 
 ![image](https://github.com/user-attachments/assets/b3fb248d-ee95-4486-bc86-1929fff15a54)
 
    ## 7. Use the commamnd below to determine the file is syntax error free
    
-sudo apache2ctl configtest
+      sudo apache2ctl configtest
 
 ![image](https://github.com/user-attachments/assets/67712924-0c11-4ebf-8fee-ceac234fa836)
 
    ## 8. Reload Apache to effect the changes
    
-sudo systemctl reload apache2
+      sudo systemctl reload apache2
 
 ![image](https://github.com/user-attachments/assets/07dd50d3-12f1-4741-a587-e08cf550c5eb)
 
@@ -321,12 +321,12 @@ The website is now active. However, the web root /var/www/projectlamp is still e
 
    ## 9. Create an index.html file to ensure the virtual host works perfectly.
    
-sudo echo 'Hello LAMP from hostname' $ (TOKEN='curl -X PUT
-"http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"' &&
-curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/meta-data/public-
-hostname) 'with public IP' $ (TOKEN='curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-
-aws-ec2-metadata-token-ttl-seconds: 21600"' && curl -H "X-aws-ec2-metadata-token: $TOKEN" -s
-http://169.254.169.254/latest/meta-data/public-ipv4) >/var/www/projectlamp/index.html
+      sudo echo 'Hello LAMP from hostname' $ (TOKEN='curl -X PUT
+      "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"' &&
+      curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/meta-data/public-
+      hostname) 'with public IP' $ (TOKEN='curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-
+      aws-ec2-metadata-token-ttl-seconds: 21600"' && curl -H "X-aws-ec2-metadata-token: $TOKEN" -s
+      http://169.254.169.254/latest/meta-data/public-ipv4) >/var/www/projectlamp/index.html
 
    ## Error
    
@@ -339,7 +339,7 @@ http://169.254.169.254/latest/meta-data/public-ipv4) >/var/www/projectlamp/index
 
    ## Corrected command
    
-sudo bash -c 'echo "Hello LAMP from hostname $(TOKEN=$(curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600") && curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/meta-data/public-hostname) with public IP $(TOKEN=$(curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600") && curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/meta-data/public-ipv4)" >/var/www/projectlamp/index.html'
+      sudo bash -c 'echo "Hello LAMP from hostname $(TOKEN=$(curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds:             21600") && curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/meta-data/public-hostname) with public IP $(TOKEN=$(curl -X PUT             "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600") && curl -H "X-aws-ec2-metadata-token: $TOKEN" -s                       http://169.254.169.254/latest/meta-data/public-ipv4)" >/var/www/projectlamp/index.html'
 
    ## Output
    
@@ -354,7 +354,7 @@ sudo bash -c 'echo "Hello LAMP from hostname $(TOKEN=$(curl -X PUT "http://169.2
 
    ## 1. Changing the landing page from index.html to index.php in the Directory file
    
-sudo vim /etc/apache2/mods-enabled/dir.conf
+      sudo vim /etc/apache2/mods-enabled/dir.conf
 
 <IfModule mod_dir.c>
 #Change this:
@@ -375,12 +375,12 @@ Now that there is a custom location to host your website's files and folders, we
 
    ## 3. Create a new file named index. php inside the custom web root folder:
    
-sudo vim /var/www/projectlamp/index.php
+      sudo vim /var/www/projectlamp/index.php
 
 Add the PHP code inside the blank file opened
 
-<?php
-phpinfo();
+      <?php
+      phpinfo();
 
 ![image](https://github.com/user-attachments/assets/25d51f4d-4102-4fce-a5b3-65a3a186a5d8)
 
