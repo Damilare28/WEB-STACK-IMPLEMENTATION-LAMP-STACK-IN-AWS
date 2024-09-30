@@ -203,7 +203,7 @@ My LAMP Stack is completely installed and fully operational with the following c
 
 To test it with a PHP script, an APACHE VIRTUAL HOST will be set up to hold the websites files and folders.
 
-# STtage 4: APACHE VIRTUAL HOST
+# Stage 4: APACHE VIRTUAL HOST
    ## 1. Creating a directory for PROJECTLAMP using "mkdir" command
 sudo mkdir /var/www/projectlamp 
    ## 2. Assign ownership of the directory to my current system user using the $USER environment variable
@@ -282,6 +282,33 @@ sudo bash -c 'echo "Hello LAMP from hostname $(TOKEN=$(curl -X PUT "http://169.2
    ## Output
    
 ![image](https://github.com/user-attachments/assets/dbadbf93-82a1-497b-9908-8d08ee1db47c)
+
+# Stage 5: Enabling PHP on the website
+   ## 1. Changing the landing page from index.html to index.php in the Directory file
+sudo vim /etc/apache2/mods-enabled/dir.conf
+<IfModule mod_dir.c>
+#Change this:
+#DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm
+#To this:
+DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
+</IfModule>
+![image](https://github.com/user-attachments/assets/1cb3cfa0-ac63-4955-929f-3ed2404bcac7)
+   ## 2. Reload Apache to effect the changes
+![image](https://github.com/user-attachments/assets/91ee7744-7440-4e0a-9021-9629d9d02300)
+Finally, we will create a PHP script to test that PHP is correctly installed and configured on your
+server.
+Now that you have a custom location to host your website's files and folders, we'll create a PHP
+test script to confirm that Apache is able to handle and process requests for PHP files.
+
+   ## 3. Create a new file named index. php inside the custom web root folder:
+sudo vim /var/www/projectlamp/index.php
+Add the PHP code inside the blank file opened
+<? php
+phpinfo () ;
+![image](https://github.com/user-attachments/assets/25d51f4d-4102-4fce-a5b3-65a3a186a5d8)
+
+
+
 
 
 
