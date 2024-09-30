@@ -63,21 +63,21 @@ Apache HTTP Server is a widely used open-source web server software. It handles 
 
 ## 1.	Update and upgrade all packages in the package manager.
 
-   sudo apt update
+sudo apt update   
    
-   sudo apt upgrade
+sudo apt upgrade
    
 ![image](https://github.com/user-attachments/assets/e9dd4156-6b88-48c0-8fa6-303e58c83bb7)
 
 ## 2. Run Apache2 command installation package
 
-      sudo apt install apache2
+sudo apt install apache2
       
   ![image](https://github.com/user-attachments/assets/1686673e-c66d-45cf-af73-8a01f0263a34)
 
 ## 3. Verify that apache is running as a service on the OS.
 
-      sudo systemctl status apapche2
+sudo systemctl status apapche2
       
       Note: If it is green and running, then apache2 is running perfectly
       .
@@ -85,11 +85,11 @@ Apache HTTP Server is a widely used open-source web server software. It handles 
 
 ## The server can be accessed locally by using the commands below
 
-   $ curl http://localhost:80   
+curl http://localhost:80   
    
             or            
             
-   $ curl http://127.0.0.1:80
+curl http://127.0.0.1:80
    
 ![image](https://github.com/user-attachments/assets/9cd375c7-cb6f-49bd-8567-92ca684dca2f)
 
