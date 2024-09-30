@@ -386,6 +386,10 @@ Add the PHP code inside the blank file opened
 
 ![image](https://github.com/user-attachments/assets/4aa354ee-c1a7-4bf6-9878-0bc54708faf2)
 
+Note: This page provides information about your server from the perspective of PHP. It is useful for debugging and to ensure that your settings are being applied correctly.
+Note: it's best to remove the file you created as it contains sensitive information about your PHP environment -and your Ubuntu server.
+
+      $ sudo rm /var/www/projectlamp/index.php
 
 
 
